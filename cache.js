@@ -8,7 +8,7 @@ class Cache {
     #linkedList = null;
 
     constructor(limit) {
-        if(!isNaN(limit)) this.#limit = limit;
+        if(!isNaN(limit) && limit > 0) this.#limit = limit;
         this.#linkedList = new DoubleLikedList();
     }
 
